@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="hr.plavatvornica.zadatak.SecondActivity">
+<ImageView
+    android:id="@+id/iv_second_activity_main_image"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/second_activity_main_image_height"
+    android:scaleType="fitXY"
+
+    />
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rb_second_activity_ratingBar"
+        android:layout_below="@id/iv_second_activity_main_image"
+        style="@style/smallRatingBar"
+
+        android:numStars="5"
+        android:isIndicator="true"
+        android:layout_margin="@dimen/second_activity_margin"
+
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_second_activity_name"
+
+        android:layout_marginLeft="@dimen/second_activity_margin"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="@dimen/second_activity_margin_text"
+        android:layout_marginRight="@dimen/second_activity_margin"
+
+        android:layout_below="@id/rb_second_activity_ratingBar"
+        android:fontFamily="@string/fontFamilyRobotoBlack"
+        android:textStyle="normal"
+        android:textSize="@dimen/font_size_black"/>
+
+    <TextView
+        android:id="@+id/tv_second_activity_street_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_second_activity_name"
+
+        android:layout_marginLeft="@dimen/second_activity_margin"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="@dimen/second_activity_margin"
+
+
+        android:fontFamily="@string/fontFamilyRobotoRegular"
+        android:textStyle="normal"
+        android:textSize="@dimen/font_size_regular"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_second_activity_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_second_activity_street_name"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="@dimen/second_activity_margin"
+        android:layout_marginBottom="@dimen/second_activity_margin_text"
+        android:layout_marginRight="@dimen/second_activity_margin"
+
+        android:fontFamily="@string/fontFamilyRobotoRegular"
+        android:textStyle="normal"
+        android:textSize="@dimen/font_size_regular"
+        />
+    <TextView
+        android:id="@+id/tv_second_activity_description"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/second_activity_description_height"
+        android:layout_below="@id/tv_second_activity_city"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="@dimen/second_activity_margin"
+        android:layout_marginBottom="@dimen/second_activity_margin"
+        android:layout_marginRight="@dimen/second_activity_margin"
+
+        android:fontFamily="@string/fontFamilyRobotoRegular"
+        android:textStyle="normal"
+        android:textSize="@dimen/font_size_regular"
+        />
+    <ImageView
+        android:id="@+id/iv_second_activity_small_picture1"
+        android:layout_width="@dimen/second_activity_small_picture_width"
+        android:layout_height="@dimen/second_activity_small_picture_height"
+        android:layout_below="@id/tv_second_activity_description"
+
+
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="@dimen/second_activity_margin"
+        android:layout_marginRight="@dimen/second_activity_margin_pictures"
+
+        />
+    <ImageView
+        android:id="@+id/iv_second_activity_small_picture2"
+        android:layout_width="@dimen/second_activity_small_picture_width"
+        android:layout_height="@dimen/second_activity_small_picture_height"
+        android:layout_below="@id/tv_second_activity_description"
+        android:layout_toRightOf="@id/iv_second_activity_small_picture1"
+
+
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="@dimen/second_activity_margin_pictures"
+
+        />
+    <ImageView
+        android:id="@+id/iv_second_activity_small_picture3"
+        android:layout_width="@dimen/second_activity_small_picture_width"
+        android:layout_height="@dimen/second_activity_small_picture_height"
+        android:layout_below="@id/tv_second_activity_description"
+        android:layout_toRightOf="@id/iv_second_activity_small_picture2"
+        android:scaleType="fitXY"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="@dimen/second_activity_margin"
+        android:layout_marginBottom="@dimen/second_activity_margin"
+        />
+</RelativeLayout>

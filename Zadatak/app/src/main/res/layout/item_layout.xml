@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/item_margin_top"
+    android:paddingLeft="@dimen/item_margin_sides"
+    android:paddingRight="@dimen/item_margin_sides"
+    android:paddingBottom="@dimen/item_margin_bottom"
+
+
+    >
+
+    <ImageView
+
+        android:id="@+id/iv_profile_picture"
+        android:layout_width="@dimen/width_profile_picture"
+        android:layout_height="@dimen/height_profile_picture"
+        android:scaleType="fitXY"
+        android:layout_marginTop="3dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_profile_picture"
+        android:layout_marginLeft="@dimen/item_margin_sides"
+        android:fontFamily="@string/fontFamilyRobotoBlack"
+        android:textStyle="normal"
+        android:textSize="@dimen/font_size_black"/>
+
+
+    <TextView
+        android:id="@+id/tv_street_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/iv_profile_picture"
+        android:layout_marginLeft="@dimen/item_margin_sides"
+        android:fontFamily="@string/fontFamilyRobotoRegular"
+        android:textStyle="normal"
+        android:textSize="@dimen/font_size_regular"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_street_name"
+        android:layout_toRightOf="@id/iv_profile_picture"
+        android:layout_marginLeft="@dimen/item_margin_sides"
+        android:fontFamily="@string/fontFamilyRobotoRegular"
+        android:textStyle="normal"
+        android:textSize="@dimen/font_size_regular"
+    />
+
+
+</RelativeLayout>
